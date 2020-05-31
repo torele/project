@@ -1,20 +1,12 @@
 "use strict";
 
-const numbersOfFilms = +prompt("Skolko filmov vi uje posmotreli?", "");
-const personalMovieDB = {
-    count: numbersOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+let num = 10;
 
-const a = prompt("Odin iz poslednix filmov?", ""),
-      b = prompt("na skolko ocenice ego?", ""),
-      c = prompt("Odin iz poslednix filmov?", ""),
-      d = prompt("na skolko ocenice ego?", "");
+for (let i = 0; i < num; i++) {
+    if (i%2 == 1) {
+        //break;
+        continue;
+    }
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-
-console.log(personalMovieDB);
+    console.log(i);
+}
